@@ -28,6 +28,10 @@ CuboidMaker.prototype.volume = function() {
 
   Formula for cuboid surface area of a cube: 2 * (length * width + length * height + width * height)
 */
+CuboidMaker.prototype.surfaceArea = function() {
+  const surfaceArea = 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
+  console.log(`Cuboid's surface area is - ${surfaceArea}`);
+}
 
 
 /* == Step 4: Create a new object that uses CuboidMaker ==

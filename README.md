@@ -46,6 +46,8 @@ Edit this document to include your answers after each question. Make sure to lea
 * 4. Explicit Binding - this gets explicitly defined when call or apply methods of JS are called or applied on the object.
 
 5. Why do we need super() in an extended class?
+* `super()` makes it possible for us to reference the class we extended from. It simply tells the extended class to look up the class we extended from and apply or copy whatever we have from that class(we extended from).
+
 
 ## Project Set up
 

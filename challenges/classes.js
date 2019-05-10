@@ -14,6 +14,11 @@ class CuboidMakerClass {
     this.width = props.width;
     this.height = props.height;
   }
+
+  volume() {
+    let volume = this.length * this.width * this.height;
+    console.log(`Cuboid's volume is - ${volume}`);
+  }
 }
 
 
@@ -22,10 +27,10 @@ class CuboidMakerClass {
   
   Formula for cuboid volume: length * width * height
 */
-CuboidMaker.prototype.volume = function() {
-  let volume = this.length * this.width * this.height;
-  console.log(`Cuboid's volume is - ${volume}`);
-}
+// CuboidMaker.prototype.volume = function() {
+//   let volume = this.length * this.width * this.height;
+//   console.log(`Cuboid's volume is - ${volume}`);
+// }
 
 
 /* == Step 3: Surface Area Method ==

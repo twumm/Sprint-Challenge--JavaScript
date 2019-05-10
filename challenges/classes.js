@@ -17,12 +17,12 @@ class CuboidMakerClass {
 
   volume() {
     let volume = this.length * this.width * this.height;
-    console.log(`Cuboid's volume from ${this.__proto__.constructor.name} is - ${volume}`);
+    console.log(`Volume from ${this.__proto__.constructor.name} is - ${volume}`);
   }
 
   surfaceArea() {
     const surfaceArea = 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
-    console.log(`Cuboid's surface area from ${this.__proto__.constructor.name} is - ${surfaceArea}`);
+    console.log(`Surface area from ${this.__proto__.constructor.name} is - ${surfaceArea}`);
   }
 }
 
@@ -62,4 +62,7 @@ const cuboidClass = new CuboidMakerClass({
 console.log(cuboidClass.volume()); // 100
 console.log(cuboidClass.surfaceArea()); // 130
 
-// Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area.
+// Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker. 
+// Find out the formulas for volume and surface area for cubes and create those methods
+// using the dimension properties from CuboidMaker.  
+// Test your work by logging out your volume and surface area.

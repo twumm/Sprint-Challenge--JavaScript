@@ -144,8 +144,10 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
-console.log(lowerCase); 
+let lowerCase = [];
+// Map through array and return new array into lowerCase array containing lowercase animal names.
+lowerCase = zooAnimals.map(animal => animal.animal_name.toLowerCase());
+console.log(lowerCase);
 
 /* Request 3: .filter() 
 

@@ -91,6 +91,10 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
+// Loop through the graduate array and get the first name and email.
+for (let i=0; i<graduates.length; i++) {
+  contactInfo.push(`${graduates[i].first_name} ${graduates[i].email}`);
+}
 console.log(contactInfo);
 
 

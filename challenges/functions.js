@@ -8,7 +8,7 @@
 */
 
 function consume(a, b, cb) {
-  return cb({a, b});
+  return cb(a, b);
 }
 
 // consume(3, 2, (cb) => {
@@ -21,12 +21,23 @@ function consume(a, b, cb) {
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+function add(x, y) {
+  console.log(x + y);
+}
+
+function multiply(x, y) {
+  console.log(x * y);
+}
+
+function greeting(first_name, last_name) {
+  console.log(`Hello ${first_name} ${last_name}, nice to meet you!`)
+}
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// consume(2,2,add); // 4
-// consume(10,16,multiply); // 160
-// consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
+consume(2,2,add); // 4
+consume(10,16,multiply); // 160
+consume("Mary","Poppins", greeting); // Hello Mary Poppins, nice to meet you!
 
 
 // ==== Closures ==== 

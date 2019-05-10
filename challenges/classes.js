@@ -2,10 +2,18 @@
 /* == Step 1: Base Constructor ==
   Create a constructor function named CuboidMaker that accepts properties for length, width, and height
 */
-function CuboidMaker(props) {
-  this.length = props.length;
-  this.width = props.width;
-  this.height = props.height;
+// function CuboidMaker(props) {
+//   this.length = props.length;
+//   this.width = props.width;
+//   this.height = props.height;
+// }
+
+class CuboidMakerClass {
+  constructor(props) {
+    this.length = props.length;
+    this.width = props.width;
+    this.height = props.height;
+  }
 }
 
 

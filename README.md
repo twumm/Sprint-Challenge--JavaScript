@@ -33,6 +33,7 @@ Edit this document to include your answers after each question. Make sure to lea
 * `.forEach` mutates the state of the calling/original array.
 
 2. What is the difference between a function and a method?
+* Both are functions in JavaScript, however, methods are functions which form part of the properties of an object.
 
 3. What is closure?
 * A closure can be defined as where variables belong to within a function or other environments the variable finds itself in. This can be a local or global scope for the variable.

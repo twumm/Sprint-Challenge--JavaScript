@@ -29,14 +29,25 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+* `.map` always creates a new array with the result of the function passed on every element in the original array. 
+* `.forEach` mutates the state of the calling/original array.
 
 2. What is the difference between a function and a method?
+* Both are functions in JavaScript, however, methods are functions which form part of the properties of an object.
 
 3. What is closure?
+* A closure can be defined as where variables belong to within a function or other environments the variable finds itself in. This can be a local or global scope for the variable.
 
 4. Describe the four rules of the 'this' keyword.
 
+* 1. Global Binding - the value of this in the global scope will refer to window or console Object.
+* 2. Implicit Binding - the value of this will refer to the object preceding the dot the function was called after.
+* 3. New Binding - In the case of a constructor(construction function), this refers to the specific instance of the object that is created and returned by the constructor function.
+* 4. Explicit Binding - this gets explicitly defined when call or apply methods of JS are called or applied on the object.
+
 5. Why do we need super() in an extended class?
+* `super()` makes it possible for us to reference the class we extended from. It simply tells the extended class to look up the class we extended from and apply or copy whatever we have from that class(we extended from).
+
 
 ## Project Set up
 
@@ -58,7 +69,7 @@ Follow these steps for completing your project:
 - [ ] PM then will count the HW as done by  merging the branch back into master.
 
 
-## Minimum Viable Product
+## Minimum Viable Product 
 
 Your finished project must include all of the following requirements:
 
